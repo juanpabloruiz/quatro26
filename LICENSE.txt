@@ -1,0 +1,11 @@
+Copyright (c) 2024 Estudio Quatro
+
+Este software y todos sus componentes son propiedad exclusiva de Estudio Quatro.
+
+Queda estrictamente prohibida su copia, distribución, modificación o uso, total o parcial, sin autorización expresa y por escrito de Estudio Quatro.
+
+Este código está destinado únicamente a uso interno. No se otorgan licencias, sublicencias ni derechos de uso fuera del entorno autorizado.
+
+El acceso o posesión de este código fuente no implica ningún tipo de cesión de derechos ni autorización de uso.
+
+Para más información, contactarse con: info@estudioquatro.com
