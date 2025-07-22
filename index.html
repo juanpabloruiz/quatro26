@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Estudio Quatro</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  <header class="bg-dark text-white text-center py-4">
-    <h1>Estudio Quatro</h1>
+  <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Estudio Quatro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <a href="../"><img src="../img/logo.png" alt="Logotipo" class="mx-auto d-block img-fluid"></a>
   </header>
 
   <main class="container-fluid py-5">
     <div class="row g-4">
-      
+
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card h-100">
           <div class="card-body">
@@ -23,7 +52,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card h-100">
           <div class="card-body">
@@ -32,7 +61,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card h-100">
           <div class="card-body">
@@ -43,12 +72,30 @@
       </div>
 
     </div>
+
+
   </main>
 
-  <footer class="bg-light text-center py-3">
-    <small>© 2024 Pablo Inc. Todos los derechos reservados.</small>
+  <section class="py-5 contacto">
+    <div class="row justify-content-center">
+      <div class="col-md-7">
+        <h1 class="text-center consulta">Ubicación en mapa
+          <br>
+          <b><span class="text-danger">GOOGLE MAPS</span></b>
+        </h1>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.7289470510786!2d-58.83331098591055!3d-27.477696682887526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456c783f70041d%3A0xd24a2d1dada87c4f!2sGestor%C3%ADa+Quatro!5e0!3m2!1ses-419!2sar!4v1551667383208"
+          width="600" height="393" frameborder="0" style="border:0;width: 100%;" allowfullscreen></iframe>
+        <a class="btn btn-primary mt-3 mx-auto d-table" target="_BLANK" href="https://www.google.com.ar/search?sxsrf=ACYBGNQDnuW-Kry7m1tnKC4DdZxXvFFy2A%3A1571524101231&source=hp&ei=BY6rXcuIDJO95OUP6-6YKA&q=estudio+quatro&oq=estudio+quatro&gs_l=psy-ab.3..35i39j0i22i30j0i22i10i30j38.1557.4302..4748...0.0..0.98.1301.14......0....1..gws-wiz.......0j0i131j0i67j0i20i263j0i10.ph4UaGhHjag&ved=0ahUKEwiLn7u-r6nlAhWTHrkGHWs3BgUQ4dUDCAY&uact=5#lrd=0x94456c783f70041d:0xd24a2d1dada87c4f,1,,,">Reseñas de nuestros clientes</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <small>© 2025 Estudio Quatro Inc. Todos los derechos reservados.</small>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
