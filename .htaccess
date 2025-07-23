@@ -39,3 +39,5 @@
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
 </IfModule>
+
+AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json
