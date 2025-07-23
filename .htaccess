@@ -24,10 +24,3 @@
   ExpiresByType application/x-javascript "access plus 1 month"
   ExpiresByType application/font-woff2 "access plus 1 year"
 </IfModule>
-
-# Redirigir a HTTPS (si tenés certificado SSL activo en Donweb)
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteCond %{HTTPS} off
-  RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
-</IfModule>
