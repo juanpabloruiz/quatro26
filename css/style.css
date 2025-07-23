@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 16px Helvetica, Arial, Serif;
+}
+
+header {
+    background-color: #014164;
+    padding: 1em;
+}
