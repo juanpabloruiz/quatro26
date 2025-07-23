@@ -7,6 +7,12 @@ body {
     font: 16px Helvetica, Arial, Serif;
 }
 
+footer {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    padding: 1em;
+}
+
 header {
     background-color: #014164;
     padding: 1em;
@@ -14,4 +20,5 @@ header {
 
 #somos {
     background-color: rgb(187, 230, 193);
+    padding: 1em;
 }
