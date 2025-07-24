@@ -22,6 +22,11 @@ footer {
   text-align: center;
 }
 
+h2 {
+  margin: 1rem 0;
+  text-align: center;
+}
+
 header {
   background-color: #014164;
   padding: 1rem;
@@ -45,6 +50,10 @@ section {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   margin: 1rem 0; /* usá margin en lugar de padding para que no afecte el ancho */
+}
+
+#mapa {
+  padding: 2rem 0;
 }
 
 #somos {
