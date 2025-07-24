@@ -116,26 +116,6 @@
       <br />
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      const elementos = document.querySelectorAll(".fade-in");
-      const titulo = document.querySelector("#quienes-somos h2");
 
-      const mostrar = () => {
-        elementos.forEach((el) => {
-          const top = el.getBoundingClientRect().top;
-          if (top < window.innerHeight - 100) {
-            el.classList.add("show");
-          }
-        });
-        if (titulo.getBoundingClientRect().top < window.innerHeight - 100) {
-          titulo.style.opacity = 1;
-        }
-      };
-
-      window.addEventListener("scroll", mostrar);
-      window.addEventListener("load", mostrar);
-    </script>
   </body>
 </html>
