@@ -31,7 +31,7 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  padding: 1rem;
+  margin: 1rem 0; /* usá margin en lugar de padding para que no afecte el ancho */
 }
 
 #somos {
@@ -43,9 +43,25 @@ section {
   margin: auto;
 }
 
+.contenedor {
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
 .col {
   background-color: #eee;
-  padding: 2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.col img {
+  width: 100%;
 }
 
 @media (max-width: 768px) {
