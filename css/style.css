@@ -38,3 +38,7 @@ section {
   background-color: rgb(187, 230, 193);
   padding: 1em;
 }
+
+.centro {
+	margin: auto;
+}
