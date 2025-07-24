@@ -40,5 +40,16 @@ section {
 }
 
 .centro {
-	margin: auto;
+  margin: auto;
+}
+
+.col {
+  background-color: #eee;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  section {
+    grid-template-columns: 1fr;
+  }
 }
