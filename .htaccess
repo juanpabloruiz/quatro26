@@ -1,6 +1,11 @@
 RewriteEngine On
+# Redirigir www → no-www
+RewriteCond %{HTTP_HOST} ^www\.estudioquatro\.com [NC]
+RewriteRule ^(.*)$ https://estudioquatro.com/$1 [L,R=301]
+
+# Redirigir http → https
 RewriteCond %{HTTPS} off
-RewriteRule ^ https://tudominio.com%{REQUEST_URI} [L,R=301]
+RewriteRule ^(.*)$ https://estudioquatro.com/$1 [L,R=301]
 
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json image/svg+xml
@@ -9,39 +14,42 @@ RewriteRule ^ https://tudominio.com%{REQUEST_URI} [L,R=301]
 <IfModule mod_expires.c>
     ExpiresActive On
 
-    # Imágenes: 1 año
-    ExpiresByType image/jpg "access plus 1 year"
-    ExpiresByType image/jpeg "access plus 1 year"
-    ExpiresByType image/png "access plus 1 year"
+    # Imágenes WebP y SVG: 1 año
     ExpiresByType image/webp "access plus 1 year"
-    ExpiresByType image/gif "access plus 1 year"
     ExpiresByType image/svg+xml "access plus 1 year"
-    ExpiresByType image/ico "access plus 1 year"
 
-    # CSS y JavaScript: 1 año
+    # Otros formatos de imagen: 1 año
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+
+    # CSS: 1 año
     ExpiresByType text/css "access plus 1 year"
+
+    # JS: 1 año
     ExpiresByType application/javascript "access plus 1 year"
-    ExpiresByType application/x-javascript "access plus 1 year"
-
-    # Fuentes web: 1 año
-    ExpiresByType application/font-woff "access plus 1 year"
-    ExpiresByType application/font-woff2 "access plus 1 year"
-
-    # HTML: 1 hora (para que si actualizás, el cambio se vea rápido)
-    ExpiresByType text/html "access plus 1 hour"
 </IfModule>
 
 <IfModule mod_headers.c>
     <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico|css|js|woff|woff2|ttf)$">
-        Header set Cache-Control "max-age=31536000, public"
+        Header set Cache-Control "max-age=31536000, public, immutable"
     </FilesMatch>
 </IfModule>
 
 <IfModule mod_cache.c>
   CacheQuickHandler On
-  CacheEnable disk "/"
   CacheRoot "/var/cache/apache2/mod_cache_disk"
+  CacheEnable disk "/"
   CacheDirLevels 2
   CacheDirLength 1
+
+  <IfModule mod_cache_disk.c>
+    # No cachear HTML dinámico (solo estáticos)
+    CacheDisable "/admin"
+    CacheDisable "/login"
+  </IfModule>
 </IfModule>
+
 
