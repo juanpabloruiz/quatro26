@@ -7,8 +7,8 @@
     <title>Estudio Quatro</title>
 
     <!-- Estilo -->
-    <link rel="preload" href="style.css" as="style">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Meta tags Google -->
     <meta name="description" content="Servicios profesionales en la Provincia de Corrientes. Asesoramiento jurídico, notarial y contable. Especialistas en el Régimen Jurídico de Automotores y sus derivados.">
@@ -138,92 +138,7 @@
         CP W3400 - Corrientes - Argentina
     </footer>
 
-    <script>
-        const mapContainer = document.getElementById("map-container");
-        mapContainer.addEventListener("click", function() {
-            // Crear iframe interactivo
-            const iframe = document.createElement("iframe");
-            iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.7289470510786!2d-58.83331098591055!3d-27.477696682887526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456c783f70041d%3A0xd24a2d1dada87c4f!2sGestor%C3%ADa+Quatro!5e0!3m2!1ses-419!2sar!4v1551667383208";
-            iframe.width = "100%";
-            iframe.height = "400";
-            iframe.style.border = "0";
-            iframe.allowFullscreen = true;
-            iframe.loading = "lazy";
-            iframe.referrerPolicy = "no-referrer-when-downgrade";
-
-            // Reemplazar imagen con iframe
-            mapContainer.innerHTML = "";
-            mapContainer.appendChild(iframe);
-        });
-    </script>
-
-    <!-- Lazy load de Google Analytics -->
-    <script>
-        function cargarAnalytics() {
-            if (window.gtagLoaded) return;
-            window.gtagLoaded = true;
-
-            var script = document.createElement('script');
-            script.src = "https://www.googletagmanager.com/gtag/js?id=G-613K0N2Q3W";
-            script.async = true;
-            document.body.appendChild(script);
-
-            window.dataLayer = window.dataLayer || [];
-
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            window.gtag = gtag;
-            gtag('js', new Date());
-            gtag('config', 'G-613K0N2Q3W');
-        }
-
-        window.addEventListener('scroll', cargarAnalytics, {
-            once: true
-        });
-        window.addEventListener('click', cargarAnalytics, {
-            once: true
-        });
-    </script>
-
-    <!-- Sitemap -->
-    <script>
-        // Mapa ruta → id de la sección
-        const SECTION_BY_PATH = {
-            "/quienes-somos": "quienes-somos",
-            "/equipo": "equipo",
-            "/contacto": "contacto"
-        };
-
-        function scrollToSectionId(id) {
-            const el = document.getElementById(id);
-            if (!el) return;
-
-            // Si tenés header fijo, poné su selector acá:
-            const header = document.querySelector('.site-header');
-            const offset = header ? header.offsetHeight : 0;
-
-            const y = el.getBoundingClientRect().top + window.pageYOffset - offset;
-            window.scrollTo({
-                top: y,
-                behavior: "auto"
-            }); // o "smooth" si querés animación
-        }
-
-        document.addEventListener("DOMContentLoaded", () => {
-            const path = (location.pathname || "/").replace(/\/+$/, ""); // sin barra final
-            const id = SECTION_BY_PATH[path];
-            if (id) {
-                // Scrollea SIN agregar # a la URL
-                scrollToSectionId(id);
-                // Asegurá que la URL quede limpia exactamente en ese path
-                history.replaceState(null, "", path);
-            }
-        });
-    </script>
-
-
-
+    <script src="js/main.min.js" defer></script>
 
 </body>
 
