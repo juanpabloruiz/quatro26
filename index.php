@@ -15,52 +15,43 @@
     <meta name="keywords" content="Corrientes, Registro, Automotor, Propiedad, Inmueble, Catastro, Municipalidades, IPS, AnSeS, Trámites">
     <meta name="robots" content="index, follow">
     <meta name="language" content="es_ES">
-    <meta property="og:locale" content="es_LA">
     <meta name="author" content="Juan Guillermo Ruiz">
-    <meta property="og:type" content="business.business">
-    <meta property="og:description" content="Servicios profesionales en la Provincia de Corrientes. Asesoramiento jurídico, notarial y contable. Especialistas en el Régimen Jurídico de Automotores y sus derivados.">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="iconos/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- Meta tags Facebook -->
-    <meta property="og:url" content="https://estudioquatro.com">
-    <meta property="og:type" content="Portada">
-    <meta property="og:title" content="Estudio Quatro">
-    <meta property="og:description" content="Servicios profesionales en la Provincia de Corrientes. Asesoramiento jurídico, notarial y contable. Especialistas en el Régimen Jurídico de Automotores y sus derivados.">
-    <meta property="og:image" content="img/logo.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://estudioquatro.com/iconos/ms-icon-144x144.png">
 
     <!--- Íconos -->
-    <link rel="apple-touch-icon" sizes="57x57" href="iconos/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="iconos/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="iconos/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="iconos/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="iconos/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="iconos/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="iconos/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="iconos/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="iconos/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="iconos/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="iconos/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="iconos/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="iconos/favicon-16x16.png">
-    <link rel="manifest" href="iconos/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://estudioquatro.com/iconos/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://estudioquatro.com/iconos/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://estudioquatro.com/iconos/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://estudioquatro.com/iconos/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://estudioquatro.com/iconos/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://estudioquatro.com/iconos/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://estudioquatro.com/iconos/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://estudioquatro.com/iconos/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://estudioquatro.com/iconos/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://estudioquatro.com/iconos/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://estudioquatro.com/iconos/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://estudioquatro.com/iconos/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://estudioquatro.com/iconos/favicon-16x16.png">
+    <link rel="manifest" href="https://estudioquatro.com/iconos/manifest.json">
 
+    <!-- Open Graph para WhatsApp, Facebook, Telegram -->
+    <meta property="og:title" content="Estudio Quatro">
+    <meta property="og:locale" content="es_LA">
+    <meta property="og:description" content="Servicios profesionales en la Provincia de Corrientes. Asesoramiento jurídico, notarial y contable. Especialistas en el Régimen Jurídico de Automotores y sus derivados.">
+    <meta property="og:url" content="https://estudioquatro.com">
+    <meta property="og:type" content="business.business">
+    <meta property="og:image" content="https://estudioquatro.com/img/logo.png">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-613K0N2Q3W"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-613K0N2Q3W');
-    </script>
-
-
+    <!-- Twitter Card (opcional, también funciona en WhatsApp) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Estudio Quatro">
+    <meta name="twitter:description" content="Estudio Quatro: especialistas en X. Visitanos y conoce nuestros servicios.">
+    <meta name="twitter:image" content="https://estudioquatro.com/img/logo.png">
 </head>
 
 <body>
@@ -115,10 +106,21 @@
 
     <!-- Mapa -->
     <section class="contenedor">
+
         <h2>Ubicación en Google Maps</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.7289470510786!2d-58.83331098591055!3d-27.477696682887526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456c783f70041d%3A0xd24a2d1dada87c4f!2sGestor%C3%ADa+Quatro!5e0!3m2!1ses-419!2sar!4v1551667383208" width="600" height="393" loading="lazy" title="Ubicación" style="border: 0; width: 100%" allowfullscreen></iframe>
         <a target="_BLANK" href="https://www.google.com.ar/search?sxsrf=ACYBGNQDnuW-Kry7m1tnKC4DdZxXvFFy2A%3A1571524101231&source=hp&ei=BY6rXcuIDJO95OUP6-6YKA&q=estudio+quatro&oq=estudio+quatro&gs_l=psy-ab.3..35i39j0i22i30j0i22i10i30j38.1557.4302..4748...0.0..0.98.1301.14......0....1..gws-wiz.......0j0i131j0i67j0i20i263j0i10.ph4UaGhHjag&ved=0ahUKEwiLn7u-r6nlAhWTHrkGHWs3BgUQ4dUDCAY&uact=5#lrd=0x94456c783f70041d:0xd24a2d1dada87c4f,1,,,">Reseñas de nuestros clientes</a>
-    </section>
+        <div id="map-container" style="margin-top:1rem;width:100%; height:400px; position:relative; cursor:pointer;">
+            <picture>
+                <source srcset="img/mapa.webp" type="image/webp">
+                <img src="img/mapa.jpg" fetchpriority=high alt="Mapa de Estudio Quatro" style="width:100%; height:400px; object-fit:cover; display:block;">
+            </picture>
+            <!-- Texto opcional sobre la imagen -->
+            <div style="position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:black;font-weight:bold;">
+                Haz clic para ver el mapa
+            </div>
+        </div>
+
+    </section -->
 
     <!-- Pie -->
     <footer>
@@ -131,7 +133,54 @@
         CP W3400 - Corrientes - Argentina
     </footer>
 
-   
+    <script>
+        const mapContainer = document.getElementById("map-container");
+        mapContainer.addEventListener("click", function() {
+            // Crear iframe interactivo
+            const iframe = document.createElement("iframe");
+            iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.7289470510786!2d-58.83331098591055!3d-27.477696682887526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456c783f70041d%3A0xd24a2d1dada87c4f!2sGestor%C3%ADa+Quatro!5e0!3m2!1ses-419!2sar!4v1551667383208";
+            iframe.width = "100%";
+            iframe.height = "400";
+            iframe.style.border = "0";
+            iframe.allowFullscreen = true;
+            iframe.loading = "lazy";
+            iframe.referrerPolicy = "no-referrer-when-downgrade";
+
+            // Reemplazar imagen con iframe
+            mapContainer.innerHTML = "";
+            mapContainer.appendChild(iframe);
+        });
+    </script>
+
+    <!-- Lazy load de Google Analytics -->
+    <script>
+        function cargarAnalytics() {
+            if (window.gtagLoaded) return;
+            window.gtagLoaded = true;
+
+            var script = document.createElement('script');
+            script.src = "https://www.googletagmanager.com/gtag/js?id=G-613K0N2Q3W";
+            script.async = true;
+            document.body.appendChild(script);
+
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', 'G-613K0N2Q3W');
+        }
+
+        window.addEventListener('scroll', cargarAnalytics, {
+            once: true
+        });
+        window.addEventListener('click', cargarAnalytics, {
+            once: true
+        });
+    </script>
+
 
 </body>
 
