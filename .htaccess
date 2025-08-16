@@ -7,6 +7,10 @@ RewriteRule ^(.*)$ https://estudioquatro.com/$1 [L,R=301]
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://estudioquatro.com/$1 [L,R=301]
 
+RewriteRule ^quienes-somos$ index.php [L]
+RewriteRule ^equipo$        index.php [L]
+RewriteRule ^contacto$      index.php [L]
+
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json image/svg+xml
 </IfModule>
@@ -50,6 +54,4 @@ RewriteRule ^(.*)$ https://estudioquatro.com/$1 [L,R=301]
     CacheDisable "/admin"
     CacheDisable "/login"
   </IfModule>
-</IfModule>
-
-
+</IfModule> 

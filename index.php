@@ -36,6 +36,13 @@
     <link rel="icon" type="image/png" sizes="96x96" href="https://estudioquatro.com/iconos/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://estudioquatro.com/iconos/favicon-16x16.png">
     <link rel="manifest" href="https://estudioquatro.com/iconos/manifest.json">
+    <?php
+    $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+    $path = rtrim($path, '/');
+    $valid = ['/quienes-somos', '/equipo', '/contacto', ''];
+    $canon = in_array($path, $valid) ? $path : '';
+    ?>
+    <link rel="canonical" href="https://estudioquatro.com<?= $canon ?: '/' ?>">
 
     <!-- Open Graph para WhatsApp, Facebook, Telegram -->
     <meta property="og:title" content="Estudio Quatro">
@@ -66,8 +73,8 @@
         </a>
     </header>
 
-
-    <div class="contenedor fila">
+    <!-- Equipo -->
+    <div class="contenedor fila" id="equipo">
         <div class="columna">
             <picture>
                 <source srcset="img/juan.webp" type="image/webp">
@@ -95,7 +102,7 @@
 
 
     <!-- Nosotros -->
-    <div class="somos">
+    <div class="somos" id="quienes-somos">
         <section class="contenedor">
             <h2>Quiénes somos</h2>
             <p>Somos un equipo de profesionales apasionados por nuestra actividad, que buscamos mejorar día a día como personas y que tenemos un objetivo en común, brindar servicios en forma eficaz y rápida, adaptados a las necesidades de cada cliente ofreciendo confianza, calidad e integridad.</p>
@@ -105,8 +112,7 @@
     </div>
 
     <!-- Mapa -->
-    <section class="contenedor">
-
+    <section class="contenedor" id="contacto">
         <h2>Ubicación en Google Maps</h2>
         <a target="_BLANK" href="https://www.google.com.ar/search?sxsrf=ACYBGNQDnuW-Kry7m1tnKC4DdZxXvFFy2A%3A1571524101231&source=hp&ei=BY6rXcuIDJO95OUP6-6YKA&q=estudio+quatro&oq=estudio+quatro&gs_l=psy-ab.3..35i39j0i22i30j0i22i10i30j38.1557.4302..4748...0.0..0.98.1301.14......0....1..gws-wiz.......0j0i131j0i67j0i20i263j0i10.ph4UaGhHjag&ved=0ahUKEwiLn7u-r6nlAhWTHrkGHWs3BgUQ4dUDCAY&uact=5#lrd=0x94456c783f70041d:0xd24a2d1dada87c4f,1,,,">Reseñas de nuestros clientes</a>
         <div id="map-container" style="margin-top:1rem;width:100%; height:400px; position:relative; cursor:pointer;">
@@ -119,8 +125,7 @@
                 Haz clic para ver el mapa
             </div>
         </div>
-
-    </section -->
+    </section>
 
     <!-- Pie -->
     <footer>
@@ -180,6 +185,44 @@
             once: true
         });
     </script>
+
+    <!-- Sitemap -->
+    <script>
+        // Mapa ruta → id de la sección
+        const SECTION_BY_PATH = {
+            "/quienes-somos": "quienes-somos",
+            "/equipo": "equipo",
+            "/contacto": "contacto"
+        };
+
+        function scrollToSectionId(id) {
+            const el = document.getElementById(id);
+            if (!el) return;
+
+            // Si tenés header fijo, poné su selector acá:
+            const header = document.querySelector('.site-header');
+            const offset = header ? header.offsetHeight : 0;
+
+            const y = el.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({
+                top: y,
+                behavior: "auto"
+            }); // o "smooth" si querés animación
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const path = (location.pathname || "/").replace(/\/+$/, ""); // sin barra final
+            const id = SECTION_BY_PATH[path];
+            if (id) {
+                // Scrollea SIN agregar # a la URL
+                scrollToSectionId(id);
+                // Asegurá que la URL quede limpia exactamente en ese path
+                history.replaceState(null, "", path);
+            }
+        });
+    </script>
+
+
 
 
 </body>
