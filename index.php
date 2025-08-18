@@ -53,6 +53,7 @@
     <meta property="og:image" content="https://estudioquatro.com/img/logo-cuadrado.png">
     <meta property="og:image:width" content="600">
     <meta property="og:image:height" content="600">
+    <meta property="og:image:alt" content="Logo de Estudio Quatro">
 
 
     <!-- Twitter Card (opcional, también funciona en WhatsApp) -->
