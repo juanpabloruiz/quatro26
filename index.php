@@ -50,7 +50,7 @@
     <meta property="og:description" content="Servicios profesionales en la Provincia de Corrientes. Asesoramiento jurídico, notarial y contable. Especialistas en el Régimen Jurídico de Automotores y sus derivados.">
     <meta property="og:url" content="https://estudioquatro.com">
     <meta property="og:type" content="business.business">
-    <meta property="og:image" content="https://estudioquatro.com/iconos/quatro.png?v=1">
+    <meta property="og:image" content="https://estudioquatro.com/iconos/logofb.png?v=1">
     <meta property="og:image:width" content="600">
     <meta property="og:image:height" content="600">
     <meta property="og:image:alt" content="Logo de Estudio Quatro">
