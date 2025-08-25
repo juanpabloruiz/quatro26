@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Meta tags Google -->
-    <meta name="description" content="Servicios profesionales en la Provincia de Corrientes. Asesoramiento jurídico, notarial y contable. Especialistas en el Régimen Jurídico de Automotores y sus derivados.">
+    <meta name="description" content="Servicios profesionales en la Provincia de Corrientes. Proveemos asesoramiento y servicios jurídicos. Especialistas en el Régimen Jurídico de Automotores y relaciones de familia. Derecho penal y Laboral.">
     <meta name="keywords" content="Corrientes, Registro, Automotor, Propiedad, Inmueble, Catastro, Municipalidades, IPS, AnSeS, Trámites">
     <meta name="robots" content="index, follow">
     <meta name="language" content="es_ES">
@@ -47,7 +47,7 @@
     <!-- Open Graph para WhatsApp, Facebook, Telegram -->
     <meta property="og:title" content="Estudio Quatro">
     <meta property="og:locale" content="es_LA">
-    <meta property="og:description" content="Servicios profesionales en la Provincia de Corrientes. Asesoramiento jurídico, notarial y contable. Especialistas en el Régimen Jurídico de Automotores y sus derivados.">
+    <meta property="og:description" content="Servicios profesionales en la Provincia de Corrientes. Proveemos asesoramiento y servicios jurídicos. Especialistas en el Régimen Jurídico de Automotores y relaciones de familia. Derecho penal y Laboral.">
     <meta property="og:url" content="https://estudioquatro.com">
     <meta property="og:type" content="business.business">
     <meta property="og:image" content="https://estudioquatro.com/iconos/logofb.png?v=1">
@@ -59,7 +59,7 @@
     <!-- Twitter Card (opcional, también funciona en WhatsApp) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Estudio Quatro">
-    <meta name="twitter:description" content="Estudio Quatro: especialistas en X. Visitanos y conoce nuestros servicios.">
+    <meta name="twitter:description" content="Servicios profesionales en la Provincia de Corrientes. Proveemos asesoramiento y servicios jurídicos. Especialistas en el Régimen Jurídico de Automotores y relaciones de familia. Derecho penal y Laboral.">
     <meta name="twitter:image" content="https://estudioquatro.com/img/logo.png">
 </head>
 
