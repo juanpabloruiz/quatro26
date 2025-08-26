@@ -36,13 +36,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="https://estudioquatro.com/iconos/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://estudioquatro.com/iconos/favicon-16x16.png">
     <link rel="manifest" href="https://estudioquatro.com/iconos/manifest.json">
-    <?php
-    $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-    $path = rtrim($path, '/');
-    $valid = ['/quienes-somos', '/equipo', '/contacto', ''];
-    $canon = in_array($path, $valid) ? $path : '';
-    ?>
-    <link rel="canonical" href="https://estudioquatro.com<?= $canon ?: '/' ?>">
+
 
     <!-- Open Graph para WhatsApp, Facebook, Telegram -->
     <meta property="og:title" content="Estudio Quatro">
