@@ -1,17 +1,17 @@
 # =========================
 # REDIRECCIÓN HTTPS
 # =========================
-RewriteEngine On
+#RewriteEngine On
 
 # RewriteCond %{HTTPS} off
 # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-RewriteCond %{HTTPS} on
+#RewriteCond %{HTTPS} on
 
-RewriteRule ^ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#RewriteRule ^ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-RewriteRule ^quienes-somos$ index.php [L]
-RewriteRule ^equipo$        index.php [L]
-RewriteRule ^contacto$      index.php [L]
+#RewriteRule ^quienes-somos$ index.php [L]
+#RewriteRule ^equipo$        index.php [L]
+#RewriteRule ^contacto$      index.php [L]
 
 # =========================
 # COMPRESIÓN GZIP / DEFLATE
