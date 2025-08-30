@@ -97,7 +97,7 @@
             <h2>Juan Guillermo Ruiz</h2>
             <p>Abogado - Mediador</p>
             <p>Especialista en Régimen Jurídico del Automotor y Relaciones de Familia</p>
-            <p>✉️ jgr3400@gmail.com</p>
+            <p>📤 jgr3400@gmail.com</p>
             <p>📞 3794629166</p>
         </div>
 
@@ -109,7 +109,7 @@
             <h2>Tránsito Salvador Martínez</h2>
             <p>Abogado - Mediador</p>
             <p>Especialista en Derecho Laboral y Derecho Penal</p>
-            <p>✉️ trasito412@gmail.com</p>
+            <p>📤 trasito412@gmail.com</p>
             <p>📞 3794662013</p>
         </div>
     </div>
