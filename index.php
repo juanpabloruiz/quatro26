@@ -10,6 +10,23 @@
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
 
+    <?php
+
+    $uri = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
+
+    // Dominio base (ajustalo si usás www)
+    $dominio = "https://estudioquatro.com";
+
+    // Si es la raíz, canonical = /
+    if ($uri === '' || $uri === '/') {
+        $canonical = $dominio . '/';
+    } else {
+        $canonical = $dominio . '/' . $uri;
+    }
+    ?>
+
+    <link rel="canonical" href="<?= htmlspecialchars($canonical) ?>">
+
     <!-- Meta tags Google -->
     <meta name="description" content="Servicios profesionales en la Provincia de Corrientes. Proveemos asesoramiento y servicios jurídicos. Especialistas en el Régimen Jurídico de Automotores y relaciones de familia. Derecho penal y Laboral.">
     <meta name="keywords" content="Corrientes, Registro, Automotor, Propiedad, Inmueble, Catastro, Municipalidades, IPS, AnSeS, Trámites">
