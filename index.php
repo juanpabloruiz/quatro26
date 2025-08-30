@@ -10,8 +10,8 @@
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="preload" href="css/bootstrap.min.css" as="style">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- link rel="preload" href="css/bootstrap.min.css" as="style">
+    <link rel="stylesheet" href="css/bootstrap.min.css" -->
 
 
     <?php
