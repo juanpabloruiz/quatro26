@@ -10,6 +10,10 @@
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="preload" href="css/bootstrap.min.css" as="style">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
     <?php
 
     $uri = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
