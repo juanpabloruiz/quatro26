@@ -7,8 +7,9 @@
     <title>Estudio Quatro</title>
 
     <!-- Estilo -->
-    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preconnect" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
+    
 
 
     <?php
