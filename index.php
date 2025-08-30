@@ -119,7 +119,7 @@
     <div class="somos" id="quienes-somos">
         <section class="contenedor">
             <h2>Quiénes somos</h2>
-            <p>🤝 Somos un equipo de profesionales apasionados por nuestra actividad, que buscamos mejorar día a día como personas y que tenemos un objetivo en común, brindar servicios en forma eficaz y rápida, adaptados a las necesidades de cada cliente ofreciendo confianza, calidad e integridad.</p>
+            <p>👨‍💼 Somos un equipo de profesionales apasionados por nuestra actividad, que buscamos mejorar día a día como personas y que tenemos un objetivo en común, brindar servicios en forma eficaz y rápida, adaptados a las necesidades de cada cliente ofreciendo confianza, calidad e integridad.</p>
             <p>⚖️ Proveemos asesoramiento y servicios jurídicos. Especialistas en el Régimen Jurídico de Automotores y relaciones de familia. Derecho penal y Laboral.</p>
             <p>📍 Nuestro alcance comprende principalmente la Ciudad de Corrientes y ciudades vecinas, pero también en forma online o presencial tenemos cobertura en todo la República Argentina.</p>
         </section>
