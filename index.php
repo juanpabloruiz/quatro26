@@ -108,7 +108,7 @@
             </picture>
             <h2>Tránsito Salvador Martínez</h2>
             <p>Abogado - Mediador</p>
-            <p>Especialista en Derecho Laboral<br>y Derecho Penal</p>
+            <p>Especialista en Derecho Laboral y Derecho Penal</p>
             <p>📤 <a href="mailto:trasito412@gmail.com">trasito412@gmail.com</a></p>
             <p>📞 <a href="tel:3794662013">3794662013</a></p>
         </div>
