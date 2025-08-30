@@ -55,3 +55,14 @@ RewriteRule ^contacto$      index.php [L]
         Header set Cache-Control "max-age=31536000, public"
     </FilesMatch>
 </IfModule>
+
+# =========================
+# CACHE RÁPIDA DE APACHE (Opcional)
+# =========================
+<IfModule mod_cache.c>
+    CacheQuickHandler On
+    CacheEnable disk "/"
+    CacheRoot "/var/cache/apache2/mod_cache_disk"
+    CacheDirLevels 2
+    CacheDirLength 1
+</IfModule>
