@@ -9,8 +9,6 @@
     <!-- Estilo -->
     <link rel="preconnect" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
-    
-
 
     <?php
 
