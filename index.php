@@ -98,7 +98,7 @@
             <p>Abogado - Mediador</p>
             <p>Especialista en Régimen Jurídico del Automotor y Relaciones de Familia</p>
             <p>📤 <a href="mailto:jgr3400@gmail.com">jgr3400@gmail.com</a></p>
-            <p>📞 3794629166<a href="tel:3794629166">3794629166</a></p>
+            <p>📞 <a href="tel:3794629166">3794629166</a></p>
         </div>
 
         <div class="columna">
@@ -110,7 +110,7 @@
             <p>Abogado - Mediador</p>
             <p>Especialista en Derecho Laboral y Derecho Penal</p>
             <p>📤 <a href="mailto:trasito412@gmail.com">trasito412@gmail.com</a></p>
-            <p>📞 3794662013<a href="tel:3794662013">3794662013</a></p>
+            <p>📞 <a href="tel:3794662013">3794662013</a></p>
         </div>
     </div>
 
