@@ -1,0 +1,67 @@
+# =========================
+# REDIRECCIÓN HTTPS
+# =========================
+RewriteEngine On
+
+# RewriteCond %{HTTPS} off
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTPS} on
+
+RewriteRule ^ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteRule ^quienes-somos$ index.php [L]
+RewriteRule ^equipo$        index.php [L]
+RewriteRule ^contacto$      index.php [L]
+
+# =========================
+# COMPRESIÓN GZIP / DEFLATE
+# =========================
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# =========================
+# CACHÉ DE RECURSOS (Expires + Cache-Control)
+# =========================
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    # Imágenes: 1 año
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/ico "access plus 1 year"
+
+    # CSS y JS: 1 año
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType application/x-javascript "access plus 1 year"
+
+    # Fuentes web: 1 año
+    ExpiresByType application/font-woff "access plus 1 year"
+    ExpiresByType application/font-woff2 "access plus 1 year"
+    ExpiresByType application/font-ttf "access plus 1 year"
+
+    # HTML: 1 hora (para actualizaciones rápidas)
+    ExpiresByType text/html "access plus 1 hour"
+</IfModule>
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico|css|js|woff|woff2|ttf)$">
+        Header set Cache-Control "max-age=31536000, public"
+    </FilesMatch>
+</IfModule>
+
+# =========================
+# CACHE RÁPIDA DE APACHE (Opcional)
+# =========================
+<IfModule mod_cache.c>
+    CacheQuickHandler On
+    CacheEnable disk "/"
+    CacheRoot "/var/cache/apache2/mod_cache_disk"
+    CacheDirLevels 2
+    CacheDirLength 1
+</IfModule>
