@@ -4,6 +4,14 @@
     padding: 0
 }
 
+/* @font-face {
+    font-family: 'Oxygen';
+    font-display: swap;
+    src: url('../fonts/Oxygen-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal
+} */
+
 body {
     font: 16px Helvetica, Arial, Serif;
 }
@@ -25,7 +33,7 @@ footer a {
 }
 
 h2 {
-    margin: 0 0 1rem;
+    margin: 1.4rem 0
 }
 
 header {
@@ -37,6 +45,7 @@ header {
 }
 
 .somos {
+    /* font-size: 1.4rem; */
     background-color: #014164;
     color: #fff;
     display: flex;
@@ -63,7 +72,12 @@ address {
     border-radius: .5rem;
     max-width: 400px
 }
-
+/*
+.columna p {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+*/
 address img {
     margin: 0 auto 1rem;
     width: 100%;
