@@ -4,13 +4,13 @@
     padding: 0
 }
 
-/* @font-face {
-    font-family: 'Oxygen';
+@font-face {
+    font-family: 'Montserrat';
     font-display: swap;
-    src: url('../fonts/Oxygen-Regular.ttf') format('truetype');
+    src: url('Montserrat-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal
-} */
+}
 
 body {
     font: 18px Helvetica, Arial, Serif;
