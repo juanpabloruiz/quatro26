@@ -5,20 +5,21 @@
 }
 
 @font-face {
-    font-family: 'Montserrat';
+    font-family: 'Arimo';
     font-display: swap;
-    src: url('Montserrat-Regular.ttf') format('truetype');
+    src: url('Arimo-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal
 }
 
 body {
-    font: 20px Helvetica, Arial, Serif;
+    font: 18px 'Arimo', Arial, Serif;
+    line-height: 1.8rem;
 }
 
 p {
-    line-height: 1.4rem;
-    margin-bottom: 1.2rem
+    
+    margin-bottom: 1.4rem
 }
 
 footer {
@@ -44,7 +45,7 @@ header {
     padding: 1rem 0
 }
 
-.somos {
+.about {
     /* font-size: 1.4rem; */
     background-color: #014164;
     color: #fff;
