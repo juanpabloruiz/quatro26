@@ -1,8 +1,44 @@
+version: "3.9"
+
 services:
-  nginx:
-    image: nginx:alpine
-    container_name: quatro-nginx
+  nginx-proxy:
+    image: nginxproxy/nginx-proxy
+    container_name: nginx-proxy
     ports:
-      - "8080:80"
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - certs:/etc/nginx/certs
+      - vhost:/etc/nginx/vhost.d
+      - html:/usr/share/nginx/html
+    restart: always
+
+  acme:
+    image: nginxproxy/acme-companion
+    container_name: nginx-proxy-acme
+    environment:
+      DEFAULT_EMAIL: ${EMAIL}
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - certs:/etc/nginx/certs
+      - vhost:/etc/nginx/vhost.d
+      - html:/usr/share/nginx/html
+    depends_on:
+      - nginx-proxy
+    restart: always
+
+  web:
+    image: nginx:alpine
+    container_name: estudo-quatro-web
     volumes:
       - ./src:/usr/share/nginx/html:ro
+    environment:
+      VIRTUAL_HOST: ${DOMAIN}
+      LETSENCRYPT_HOST: ${DOMAIN}
+    restart: always
+
+volumes:
+  certs:
+  vhost:
+  html:
