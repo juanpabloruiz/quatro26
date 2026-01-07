@@ -1,0 +1,11 @@
+# Bloquear carpetas internas que no querés indexar
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /tmp/
+
+# Permitir todo lo demás
+Allow: /
+
+# Indicar sitemap
+Sitemap: https://estudioquatro.com/sitemap.xml
