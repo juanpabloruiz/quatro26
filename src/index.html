@@ -8,6 +8,8 @@
     <title>Estudio Quatro</title>
 
     <!-- Style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
 
     <link rel="canonical" href="https://estudioquatro.com">
@@ -67,79 +69,110 @@
 <body>
 
     <!-- Header -->
-    <header role="banner">
-        <a href="../">
+    <header class="py-3 text-center">
+        <a href="/">
             <picture>
                 <source srcset="img/logo.webp" type="image/webp">
-                <img src="img/logo.png" fetchpriority=high width="441" height="136" alt="Logotipo" />
+                <img src="img/logo.png" width="441" height="136" alt="Logotipo" class="img-fluid">
             </picture>
         </a>
     </header>
 
-    <!-- Team -->
-    <main role="main" class="container row">
-        <div class="col">
-            <picture>
-                <source srcset="img/juan.webp" type="image/webp">
-                <img src="img/juan.jpg" fetchpriority=high width="525" height="525" alt="Juan Guillermo Ruiz">
-            </picture>
-            <h2>Juan Guillermo Ruiz</h2>
-            Abogado - Mediador<br>
-            Especialista en Régimen Jurídico del Automotor y Relaciones de Familia<br>
-            📤 <a href="mailto:jgr3400@gmail.com" target="_BLANK">jgr3400@gmail.com</a><br>
-            📞 <a href="tel:3794629166" target="_BLANK">3794629166</a>
-        </div>
 
-        <div class="col">
-            <picture>
-                <source srcset="img/transito.webp" type="image/webp">
-                <img src="img/transito.jpg" fetchpriority=high width="525" height="525" alt="Tránsito Salvador Martínez">
-            </picture>
-            <h2>Tránsito Salvador Martínez</h2>
-            Abogado - Mediador<br>
-            Especialista en Derecho Laboral y Penal<br>
-            📤 <a href="mailto:trasito412@gmail.com" target="_BLANK">trasito412@gmail.com</a><br>
-            📞 <a href="tel:3794662013" target="_BLANK">3794662013</a>
+    <!-- Team -->
+    <main class="container my-4">
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 text-center border-0">
+                    <img src="img/juan.jpg" class="card-img-top rounded" alt="Juan Guillermo Ruiz">
+                    <div class="card-body">
+                        <h2 class="h4">Juan Guillermo Ruiz</h2>
+                        Abogado - Mediador<br>
+                        Especialista en Régimen Jurídico del Automotor y Relaciones de Familia<br>
+                        📤 <a href="mailto:jgr3400@gmail.com">jgr3400@gmail.com</a><br>
+                        📞 <a href="tel:3794629166">3794629166</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 text-center border-0">
+                    <img src="img/transito.jpg" class="card-img-top rounded" alt="Tránsito Salvador Martínez">
+                    <div class="card-body">
+                        <h2 class="h4">Tránsito Salvador Martínez</h2>
+                        Abogado - Mediador<br>
+                        Especialista en Derecho Laboral y Penal<br>
+                        📤 <a href="mailto:trasito412@gmail.com">trasito412@gmail.com</a><br>
+                        📞 <a href="tel:3794662013">3794662013</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
+
 
     <!-- About -->
     <div class="about">
         <section class="container">
             <h2>Quiénes somos</h2>
-            <p>🤝 Somos un equipo de profesionales apasionados por nuestra actividad, que buscamos mejorar día a día como personas y que tenemos un objetivo en común, brindar servicios en forma eficaz y rápida, adaptados a las necesidades de cada cliente ofreciendo confianza, calidad e integridad.</p>
-            <p>⚖️ Proveemos asesoramiento y servicios jurídicos. Especialistas en el Régimen Jurídico de Automotores y relaciones de familia. Derecho penal y Laboral.</p>
-            <p>📍 Nuestro alcance comprende principalmente la Ciudad de Corrientes y ciudades vecinas, pero también en forma online o presencial tenemos cobertura en todo la República Argentina.</p>
+            <p>🤝 Somos un equipo de profesionales apasionados por nuestra actividad, que buscamos mejorar día a día
+                como personas y que tenemos un objetivo en común, brindar servicios en forma eficaz y rápida, adaptados
+                a las necesidades de cada cliente ofreciendo confianza, calidad e integridad.</p>
+            <p>⚖️ Proveemos asesoramiento y servicios jurídicos. Especialistas en el Régimen Jurídico de Automotores y
+                relaciones de familia. Derecho penal y Laboral.</p>
+            <p>📍 Nuestro alcance comprende principalmente la Ciudad de Corrientes y ciudades vecinas, pero también en
+                forma online o presencial tenemos cobertura en todo la República Argentina.</p>
         </section>
     </div>
 
+    <section class="about py-4">
+        <div class="container text-center text-white">
+            <h2>Quiénes somos</h2>
+            <p>🤝 Somos un equipo de profesionales apasionados por nuestra actividad, que buscamos mejorar día a día
+                como personas y que tenemos un objetivo en común, brindar servicios en forma eficaz y rápida, adaptados
+                a las necesidades de cada cliente ofreciendo confianza, calidad e integridad.</p>
+            <p>⚖️ Proveemos asesoramiento y servicios jurídicos. Especialistas en el Régimen Jurídico de Automotores y
+                relaciones de familia. Derecho penal y Laboral.</p>
+            <p>📍 Nuestro alcance comprende principalmente la Ciudad de Corrientes y ciudades vecinas, pero también en
+                forma online o presencial tenemos cobertura en todo la República Argentina.</p>
+        </div>
+    </section>
+
+
     <!-- Map -->
-    <section class="container">
+    <section class="container my-4">
         <h2>Ubicación en Google Maps</h2>
-        <a target="_BLANK" href="https://www.google.com.ar/search?sxsrf=ACYBGNQDnuW-Kry7m1tnKC4DdZxXvFFy2A%3A1571524101231&source=hp&ei=BY6rXcuIDJO95OUP6-6YKA&q=estudio+quatro&oq=estudio+quatro&gs_l=psy-ab.3..35i39j0i22i30j0i22i10i30j38.1557.4302..4748...0.0..0.98.1301.14......0....1..gws-wiz.......0j0i131j0i67j0i20i263j0i10.ph4UaGhHjag&ved=0ahUKEwiLn7u-r6nlAhWTHrkGHWs3BgUQ4dUDCAY&uact=5#lrd=0x94456c783f70041d:0xd24a2d1dada87c4f,1,,,">Reseñas de nuestros clientes</a>
-        <div id="map-container" style="margin-top:1rem;width:100%; height:400px; position:relative; cursor:pointer;">
-            <picture>
-                <source srcset="img/mapa.webp" type="image/webp">
-                <img src="img/mapa.jpg" fetchpriority=high alt="Mapa de Estudio Quatro" style="width:100%; height:400px; object-fit:cover; display:block;">
-            </picture>
-            <div style="position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:black;font-weight:bold;">
+
+        <a target="_blank" href="https://www.google.com/search?q=estudio+quatro">
+            Reseñas de nuestros clientes
+        </a>
+
+        <div class="position-relative mt-3">
+            <img src="img/mapa.jpg" class="img-fluid w-100 rounded" style="height:400px; object-fit:cover;">
+            <div class="position-absolute top-50 start-50 translate-middle fw-bold">
                 Haz clic para ver el mapa
             </div>
         </div>
     </section>
 
+
     <!-- Footer -->
-    <footer role="contentinfo">
-        <small>Seguinos en redes sociales</small>
-        <br>
-        <a href="https://www.facebook.com/EstudioQuatroo/" target="_BLANK">Facebook</a>
-        <a href="https://www.instagram.com/estudio_quatro/" target="_BLANK">Instagram</a>
-        <br>
+    <footer class="text-center py-4">
+        <small>Seguinos en redes sociales</small><br>
+        <a href="https://www.facebook.com/EstudioQuatroo/" target="_blank">Facebook</a> ·
+        <a href="https://www.instagram.com/estudio_quatro/" target="_blank">Instagram</a>
+        <br><br>
         La Rioja 736 1er Piso Oficina 3<br>
-        CP W3400 - Corrientes - Argentina
+        Corrientes - Argentina
     </footer>
 
+
     <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
     <script src="js/script.js" defer></script>
 
 </body>
